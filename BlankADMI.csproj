@@ -161,9 +161,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="DMIbox\BlankDMIBox.cs" />
-    <Compile Include="DMIbox\BlankSetup.cs" />
-    <Page Include="MainWindow.xaml">
+    <Compile Include="Modules\MappingModule.cs" />
+    <Compile Include="Setups\DefaultSetup.cs" />
+    <Page Include="InstrumentWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -171,14 +171,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DMIbox\Rack.cs" />
-    <Compile Include="Libraries\MicroLibrary.cs" />
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="Modules\Rack.cs" />
+    <Compile Include="InstrumentWindow.xaml.cs">
+      <DependentUpon>InstrumentWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Modules\RenderingModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

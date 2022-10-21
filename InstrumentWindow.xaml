@@ -1,11 +1,11 @@
-﻿<Window x:Class="BlankADMI.MainWindow"
+﻿<Window x:Class="BlankADMI.InstrumentWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="MainWindow" WindowStyle="None" ResizeMode="NoResize"
-        WindowStartupLocation="CenterScreen" WindowState="Maximized" Width="1366.222" Height="768.762">
+        Title="InstrumentWindow" WindowStyle="SingleBorderWindow" ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen" WindowState="Maximized" Width="1920" Height="1080" Loaded="Window_Loaded">
     <Grid>
         </Grid>
 </Window>

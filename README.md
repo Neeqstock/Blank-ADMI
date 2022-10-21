@@ -1,7 +1,5 @@
-# Netychords
+# Blank ADMI
 
-Repository Readme coming soon!
+A blank software ADMI based on [NeeqDMIs](https://github.com/Neeqstock/NeeqDMIs) library, following its instrument development philosophy. To be used as a starting point for instrument development.
 
-# Demo Video
-
-A demo video of the instrument is available in the DemoVideo folder. [Link](https://github.com/LIMUNIMI/Netychords/blob/main/DemoVideo/longdemonetychords.mp4)
+I made this mainly to help my thesis students, in order to introduce them to instrument making, and to solve some Tobii Interaction library (now deprecated) issues and compatibilities.

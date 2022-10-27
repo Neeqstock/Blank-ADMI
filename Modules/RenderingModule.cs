@@ -3,7 +3,7 @@ using System.Windows.Threading;
 
 namespace BlankADMI.Modules
 {
-    public class RenderingModule
+    public class RenderingModule : IDisposable
     {
         public RenderingModule(InstrumentWindow instrumentWindow)
         {
@@ -15,6 +15,11 @@ namespace BlankADMI.Modules
 
         private DispatcherTimer DispatcherTimer { get; set; }
         private InstrumentWindow InstrumentWindow { get; set; }
+
+        public void Dispose()
+        {
+            DispatcherTimer.Stop();
+        }
 
         /// <summary>
         /// Starts the rendering timer

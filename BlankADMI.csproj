@@ -224,11 +224,10 @@
     <Content Include="Libraries\XInputDotNetPure.dll" />
     <Content Include="Libraries\XInputInterface.dll" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\NeeqDMIs\NeeqDMIs.csproj">
-      <Project>{5d8787ab-3ed2-4181-98ec-658814b19ae9}</Project>
-      <Name>NeeqDMIs</Name>
+    <ProjectReference Include="..\NITHdmis\NITHdmis.csproj">
+      <Project>{29df0999-0d3a-4aca-98bb-4a14e4a9d0e5}</Project>
+      <Name>NITHdmis</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

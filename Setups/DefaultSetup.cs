@@ -1,5 +1,5 @@
 ﻿using BlankADMI.Modules;
-using NeeqDMIs.Template;
+using NITHdmis.Template;
 using System;
 using System.Collections.Generic;
 

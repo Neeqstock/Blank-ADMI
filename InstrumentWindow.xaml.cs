@@ -1,5 +1,5 @@
 ﻿using BlankADMI.Setups;
-using NeeqDMIs.Template;
+using NITHdmis.Template;
 using System.Windows;
 
 namespace BlankADMI

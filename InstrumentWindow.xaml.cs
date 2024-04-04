@@ -1,4 +1,5 @@
-﻿using BlankADMI.Setups;
+﻿using BlankADMI.Modules;
+using BlankADMI.Setups;
 using NITHdmis.Template;
 using System.Windows;
 

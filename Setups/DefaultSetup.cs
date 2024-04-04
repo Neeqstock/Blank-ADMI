@@ -1,4 +1,7 @@
 ﻿using BlankADMI.Modules;
+using NITHdmis.NithSensors;
+using NITHdmis.NithSensors.Wrappers.NithFaceCam;
+using NITHdmis.Ports;
 using NITHdmis.Template;
 using System;
 using System.Collections.Generic;
@@ -24,12 +27,19 @@ namespace BlankADMI.Setups
             // Make modules
             Rack.MappingModule = new MappingModule();
             Rack.RenderingModule = new RenderingModule(InstrumentWindow);
+            Rack.USBportManager = new USBportManager();
+            Rack.UDPportManager = new UDPportManager();
+            Rack.NithModule = new NithModule();
+            Rack.MidiModule = new NITHdmis.MIDI.MidiModuleNAudio(1, 1);
+
+            // Connect USB port to NithModule
+            Rack.USBportManager.Connect(3);
+            Rack.UDPportManager.Connect();
+            Rack.UDPportManager.Listeners.Add(Rack.NithModule);
+            Rack.NithModule.Preprocessors.Add(new NithPreprocessor_FaceCam());
 
             // Add disposables to list
             Disposables.Add(Rack.RenderingModule);
-
-            // Make behaviors
-            // ...
 
             // You will probably want to leave this at the end!
             Rack.RenderingModule.StartRendering();

@@ -42,7 +42,7 @@ namespace BlankADMI.Modules
         /// </summary>
         private void DispatcherUpdate(object sender, EventArgs e)
         {
-            // TODO edit this! Put all the rendering actions here!
+            // TODO rendering instruction here!
         }
     }
 }

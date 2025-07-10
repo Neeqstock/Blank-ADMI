@@ -1,10 +1,4 @@
 ﻿using BlankADMI.Modules;
-using NITHdmis.NithSensors;
-using NITHdmis.NithSensors.Wrappers.NithFaceCam;
-using NITHdmis.Ports;
-using NITHdmis.Template;
-using System;
-using System.Collections.Generic;
 
 namespace BlankADMI.Setups
 {

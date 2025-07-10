@@ -1,8 +1,4 @@
-﻿using NITHdmis.MIDI;
-using NITHdmis.NithSensors;
-using NITHdmis.Ports;
-
-namespace BlankADMI.Modules
+﻿namespace BlankADMI.Modules
 {
     /// <summary>
     /// This will contains all the modules
